@@ -96,3 +96,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - create method crud in class CrueService
 
 - craete method handlerError
+
+- create navbar in file app.component.html by bootstrap
