@@ -26,7 +26,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-**angular component**
+## Step by Step in this Project
+
+**angular craete project**
 
 - npm install bootstrap
 
@@ -97,4 +99,26 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 - craete method handlerError
 
+**adngular form**
+
 - create navbar in file app.component.html by bootstrap
+
+- create form add book in app/component/add-book
+
+  - import { Component, OnInit, NgZone } from '@angular/core';
+  - import { Router } from '@angular/router';
+  - import { CrudService } from 'src/app/service/crud.service';
+  - import { FormGroup,FormBuilder } from '@angular/forms';
+
+- defind property bookForm in class AddBookComponent
+
+- defind constructor in class AddBookComponent
+
+  - public formBuilder: FormBuilder,
+  - private router: Router,
+  - private ngZone: NgZone,
+  - private crudService: CrudService
+
+- craete method onSubmit in class AddBookComponent for add value data to method AddBook
+  - use method subscribe for then add data log "data added succesfully"
+  - use ngZone for redirect to /books-list and check error by err
