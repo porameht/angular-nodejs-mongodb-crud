@@ -60,7 +60,7 @@ export class CrudService {
   }
 
   // delete method
-  DeleteBook(id: any, data: any): Observable<any> {
+  DeleteBook(id: any): Observable<any> {
     let API_URL = `${this.REST_API}/delete-book/${id}`;
     return this.httpClient
       .delete(API_URL, { headers: this.httpHeaders })

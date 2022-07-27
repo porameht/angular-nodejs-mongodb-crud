@@ -120,5 +120,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   - private crudService: CrudService
 
 - craete method onSubmit in class AddBookComponent for add value data to method AddBook
+
   - use method subscribe for then add data log "data added succesfully"
   - use ngZone for redirect to /books-list and check error by err
+
+- craete form for submit data in add-book.component.html file
+
+- craete book list in components/books-list file books-list.components.ts
+
+  - import { CrudService } from 'src/app/service/crud.service';
+
+- create method get and delete
+
+- craete books list page in components/books-list file books-list.components.html and write for loop in Books[]
+
