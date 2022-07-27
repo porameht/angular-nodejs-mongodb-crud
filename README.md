@@ -134,3 +134,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 - craete books list page in components/books-list file books-list.components.html and write for loop in Books[]
 
+- create edit book in component book-detail file book-detail.component.ts
+
+  - import { Router, ActivatedRoute } from '@angular/router';
+  - import { CrudService } from 'src/app/service/crud.service';
+  - import { FormGroup, FormBuilder } from '@angular/forms';
+
+- craete method onUpdate in book-detail.component.ts

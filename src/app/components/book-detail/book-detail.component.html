@@ -1,1 +1,49 @@
-<p>book-detail works!</p>
+<div class="col d-flex justify-content-center" style="margin-top: 50px">
+  <div class="card text-center" style="width: 30rem">
+    <h5 class="card-header">Update Data</h5>
+    <div class="card-body">
+      <div class="container mt-3">
+        <div class="row justify-content center mt-3">
+          <div class="col-md-12">
+            <form [formGroup]="updateForm" (ngSubmit)="onUpdate()">
+              <div class="form-group">
+                <label for="name" style="margin-bottom: 10px">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="name"
+                  required
+                />
+              </div>
+              <div class="form-group" style="margin-top: 10px">
+                <label for="price" style="margin-bottom: 10px">Price</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="price"
+                  required
+                />
+              </div>
+              <div class="form-group" style="margin-top: 10px">
+                <label for="description" style="margin-bottom: 10px"
+                  >Description</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="description"
+                  required
+                />
+              </div>
+              <div class="form-group" style="margin-top: 25px">
+                <button class="btn btn-primary btn-block" type="submit">
+                  Updata
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
